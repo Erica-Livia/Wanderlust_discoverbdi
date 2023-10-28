@@ -19,6 +19,7 @@ function App() {
                     <div className='sidebar-toggle'>☰</div>
                 </nav>
             </header>
+          
             <main>
                 <section id='hero'>
                   <div className="hero-image"></div>

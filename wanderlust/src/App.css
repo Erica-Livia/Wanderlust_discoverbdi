@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.header {
+header {
   background-color: #333;
   color: #fff;
   padding: 10px;
@@ -64,22 +64,25 @@ nav {
   font-size: 24px;
 }
 
-.hero {
+#hero {
   background-image: url('https://i.pinimg.com/736x/29/24/77/292477c7986e28ce17cce13de5933cc9.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #333;
   text-align: center;
   padding: 100px;
 }
 
+.hero-content {
+  align-items: center;
+}
 .hero h1 {
-  font-size: 36px;
+  font-size: 60px;
   font-weight: bold;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 60px;
   margin-top: 20px;
 }
 
