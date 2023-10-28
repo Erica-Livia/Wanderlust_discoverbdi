@@ -1,0 +1,113 @@
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav {
+  display: flex;
+  float: left;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.search-bar {
+  background-color:aquamarine;
+  max-width: 300px;
+  height: 70px;
+  border-color: #333;
+  border-radius: 20%;
+  text-align: center;
+  color: #333;
+  position: fixed;
+  top: 56px;
+}
+
+.sidebar-toggle {
+  float: left;
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.hero {
+  background-image: url('https://i.pinimg.com/736x/29/24/77/292477c7986e28ce17cce13de5933cc9.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.hero-image{
+  image-rendering: auto;
+}
+
+.explore-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+      display: none;
+  }
+
+  .sidebar-toggle {
+      display: block;
+  }
+}
