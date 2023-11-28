@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+
+.logo .link  {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Arial', Times, serif;
+
+}
+
+
+.main_header {
+    padding: 20px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width:100%;
+}
+
+.main_header .container {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    
+}
+
+.main_header .container .search_box {
+    display:flex;
+    margin-right: 30px;
+    height: 50px;
+}
+
+.main_header .container .search_box input {
+    outline: none;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+    width:100%;
+    
+
+}
+
+.main_header .container .button {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 7px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size:x-large;
+    margin-left: 10px;
+    width:40px;
+}
+
+.main_header .container .nav {
+    display: flex;
+    padding: 10px;
+    
+    @media screen and (max-width: 650px) {
+        display: none;
+        
+    }
+}
+
+.main_header .container .nav ul {
+    display: flex;
+    padding:8px;
+}
+.main_header .container .nav ul li {
+    margin-left: 10px;
+    list-style: none;
+}
+
+.main_header .container .nav ul li .link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.main_header .container .nav ul li .link .icon {
+    font-size:18px;
+}
+
+.main_header .container .nav button {
+    margin-left: 5px;
+    padding-top: 7px;
+    font-size: 19px;
+    color:black;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.main_header .container .nav ul li .link:hover {
+    color: darkblue;
+}
+
+.main_header .container .nav .auth button:hover{
+    color: darkblue;
+}
+

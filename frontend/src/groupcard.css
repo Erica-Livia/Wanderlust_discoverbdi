@@ -1,0 +1,75 @@
+.group-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 170px;
+    position: relative;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .group-cards .frame-4 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  
+  .group-cards .title-7 {
+    color: #ffffff;
+    font-family: "Roboto", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .group-cards .seconday {
+    align-items: center;
+    border: 1px solid;
+    border-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    width: 160px;
+  }
+  
+  .group-cards .title-8{
+    color: #ffffff;
+    font-family: "Roboto", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .group-cards .title-8 .link{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .group-cards .frame-5 {
+    align-items: flex-start;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    padding: 20px 0px;
+    justify-content: space-between;
+  }
+  

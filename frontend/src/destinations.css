@@ -1,0 +1,439 @@
+
+.destinations {
+    /* align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0; */
+    padding:0;
+    width: 100%;
+
+  }
+  
+  .destinations .filter {
+    background-color: #000000;
+    display: flex;
+    width: 100%;
+    gap:0px;
+    padding: 0px 270px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .destinations .item {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .destinations .title-4 {
+    color: #ffffff;
+    font-family: "Roboto", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .destinations .img {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .destinations .item-2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    justify-content: center;
+    padding: 16px 24px;
+    position: relative;
+  }
+  
+  .destinations .cards {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    flex: 2;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+    width: 100%;
+    position: center;
+  }
+  
+  .destinations .frame-4 {
+    align-items: center;
+    display: flex;
+    gap: 44px;
+    height: 102px;
+    padding: 0px 400px;
+    position: relative;
+    width: 1136px;
+  }
+  
+  .destinations .icon-arrow-ios-back {
+    height: 65.78px;
+    position: relative;
+    width: 65.78px;
+  }
+  
+  .destinations .frame-5 {
+    align-items: center;
+    border: 1px solid;
+    border-color: #000000;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .destinations .text-wrapper-3 {
+    color: #000000;
+    font-family: "Roboto", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: -3.5px;
+    margin-right: -3.5px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .destinations .frame-6 {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .destinations .icon-arrow-ios {
+    height: 65.78px;
+    margin-right: -43.56px;
+    position: relative;
+    width: 65.78px;
+  }
+  
+  .destinations .vector {
+    height: 1px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .destinations .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 674px;
+    justify-content: center;
+    position: relative;
+    width: 1100px;
+  }
+  
+  .destinations .title-5 {
+    color: #000000;
+    font-family: "Roboto", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    position: relative;
+    text-align: center;
+    width: 520px;
+  }
+  
+  .destinations .description {
+    color: #000000;
+    font-family: "Roboto", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+    width: 520px;
+  }
+  
+  .destinations .button {
+    all: unset;
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+  
+  .destinations .title-wrapper {
+    align-items: center;
+    background-color: #000000;
+    border-radius: 8px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    width: 160px;
+  }
+  
+  .destinations .title-6 {
+    color: #ffffff;
+    font-family: "Roboto", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .destinations .list {
+    align-self: center;
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    padding: 0px;
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .destinations .item-3 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 20px;
+    justify-content: center;
+    padding: 12px 0px;
+    position: relative;
+  }
+  
+  .destinations .icon-wrapper {
+    background-color: #0000000d;
+    border-radius: 50px;
+    height: 100px;
+    position: relative;
+    width: 100px;
+  }
+  
+  .destinations .icon {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: #000000;
+    display: -webkit-box;
+    font-family: "Roboto", Helvetica;
+    font-size: 62.5px;
+    font-weight: 400;
+    height: 100px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 100px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-overflow: ellipsis;
+    top: -1px;
+    white-space: nowrap;
+    width: 100px;
+  }
+  
+  .destinations .frame-7 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .destinations .title-7 {
+    align-self: stretch;
+    color: #000000;
+    font-family: "Roboto", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .destinations .subtitle-2 {
+    align-self: stretch;
+    color: #00000080;
+    font-family: "Roboto", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .destinations .subtitle-3 {
+    align-self: stretch;
+    color: #000000;
+    font-family: "Roboto", Helvetica;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* .destinations .section {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 60px;
+    justify-content: center;
+    padding: 60px 0px;
+    position: relative;
+    width: 100%;
+  } */
+  
+  .destinations .map-container {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    height: 300px;
+    padding: 4px 0px;
+    position: relative;
+  }
+  
+  .destinations .overlap-group-wrapper {
+    align-self: stretch;
+    background-color: #0000000d;
+    border-radius: 6px;
+    flex: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .destinations .overlap-group-wrapper .overlap-group p {
+    color: #000000;
+  }
+
+  .destinations .overlap-group {
+    background-size: 100% 100%;
+    height: 1100px;
+    position: relative;
+    top: -404px;
+    width: 100%;
+  }
+   
+  .destinations .ic-location {
+    height: 24px;
+    left: 538px;
+    position: absolute;
+    top: 526px;
+    width: 24px;
+  }
+
+  
+  .destinations .logo-2 {
+    align-items: center;
+    border-radius: 8px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 12px 24px;
+    position: relative;
+  }
+  
+  .destinations .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .destinations .container-2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 60px;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .destinations .title-8 {
+    align-self: stretch;
+    color: #ffffff;
+    font-family: "Roboto", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: 70px;
+  }
+  
+  .destinations .title-9 {
+    align-self: stretch;
+    color: #ffffff;
+    font-family: "Roboto", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: 175px;
+  }
+  
+  .destinations .title-10 {
+    align-self: stretch;
+    color: #ffffff;
+    font-family: "Roboto", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: 124px;
+  }
+  
