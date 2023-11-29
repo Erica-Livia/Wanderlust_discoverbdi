@@ -4,6 +4,7 @@ import './popular.css';
 const Popular = () => {
     return (
         <>
+        <div className="popular">
         <div className="container">
           <p>Popular Tourist Attractions</p>
           <p className="description">Discover the must-visit places in Burundi.</p>
@@ -45,6 +46,8 @@ const Popular = () => {
             </div>
           </button>
         </div>
+        </div>
+        
         </>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import './destinations.css';
 import { Card } from "./card";
+import Popular from "./popular";
 
 const Destinations = () => {
     return(
@@ -55,43 +56,7 @@ const Destinations = () => {
             src="https://c.animaapp.com/6YPq8HBQ/img/---icon--arrow-ios-forward-@2x.png"
             />
         </div> */}
-        
-        <div className="container">
-            <div className="title-5">Popular Tourist Attractions</div>
-            <p className="description">Discover the must-visit places in Burundi.</p>
-            <div className="list">
-            <div className="item-3">
-                <div className="icon-wrapper">
-                <div className="icon">🏞️</div>
-                </div>
-                <div className="frame-7">
-                <div className="title-7">Kibira National Park</div>
-                <div className="subtitle-2">Bujumbura</div>
-                </div>
-                <div className="subtitle-3">Rated 4.8/5</div>
-            </div>
-            <div className="item-3">
-                <div className="icon-wrapper">
-                <div className="icon">🏛️</div>
-                </div>
-                <div className="frame-7">
-                <div className="title-7">Gitega National Museum</div>
-                <div className="subtitle-2">Gitega</div>
-                </div>
-                <div className="subtitle-3">Rated 4.6/5</div>
-            </div>
-            <div className="item-3">
-                <div className="icon-wrapper">
-                <div className="icon">⛰️</div>
-                </div>
-                <div className="frame-7">
-                <div className="title-7">Ruvubu National Park</div>
-                <div className="subtitle-2">Karuzi</div>
-                </div>
-                <div className="subtitle-3">Rated 4.7/5</div>
-            </div>
-            </div>
-        </div>
+        <Popular />
         
         </div>
         </>
