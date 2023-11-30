@@ -11,9 +11,9 @@
   display: flex;
   flex: 0 0 auto;
   gap: 24px;
-  justify-content: center;
   overflow: hidden;
-  padding: 60px 2044px;
+  justify-content: center;
+  padding: 60px 170px;
   position: relative;
   max-width: 100%;
 }
@@ -104,6 +104,10 @@
 }
 
 .container .list .item-4 .icon-wrapper .icon {
+cursor: pointer;
+font-size: 40px;
+}
 
-font-size: 30px;
+.container .list .item-4 .icon-wrapper .icon:hover {
+  transform: scale(1.3);
 }

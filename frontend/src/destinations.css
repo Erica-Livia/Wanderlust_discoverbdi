@@ -6,7 +6,7 @@
     position: relative;
     width: 100%;
     padding: 0; */
-    padding:0;
+    padding:0 ;
     width: 100%;
 
   }
@@ -20,7 +20,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  
+
   .destinations .item {
     align-items: center;
     display: inline-flex;
