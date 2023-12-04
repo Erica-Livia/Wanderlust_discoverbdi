@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './home';
-import Destinations from './destinations';
-import Place from './place';
+import Destinations from './components/destinations';
+import Place from './components/place';
 
 const Rout = () => {
     return (

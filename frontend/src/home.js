@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-import './home.css';
-import  GroupCards  from './groupcards';
-import Tab from './tab';
-import Footer from './footer';
+import './components/home.css';
+import  GroupCards  from './components/groupcards';
+import Tab from './components/tab';
 import { FaCircleUser } from "react-icons/fa6";
-import Popular from './popular';
+import Popular from './components/popular';
 const Home = () => {
     return (
         <>

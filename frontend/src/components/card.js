@@ -1,6 +1,6 @@
   import PropTypes from "prop-types";
   import React from "react";
-  import "./card.css";
+  import "../components/card.css";
 import { FaDownLeftAndUpRightToCenter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
   
