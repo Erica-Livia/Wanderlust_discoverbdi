@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-import './components/home.css';
+import './components/css/home.css';
 import  GroupCards  from './components/groupcards';
 import Tab from './components/tab';
 import { FaCircleUser } from "react-icons/fa6";

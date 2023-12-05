@@ -1,5 +1,5 @@
 import React from "react";
-import './destinations.css';
+import './css/destinations.css';
 import { Card } from "./card";
 import Popular from "./popular";
 
