@@ -117,11 +117,7 @@ const Home = () => {
         <div className="container-2">
           <div className="title-12">What Our Customers Say</div>
           <p className="text-wrapper-4">Read the reviews from travelers who have experienced the wonders of Burundi.</p>
-          <button className="button">
-            <div className="title-wrapper">
-              <div className="title-10">Write a Review</div>
-            </div>
-          </button>
+          
         </div>
         <div className="list-3">
           <div className="card-2">

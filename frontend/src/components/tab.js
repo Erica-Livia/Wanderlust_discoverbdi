@@ -3,12 +3,12 @@ import React from "react";
 import { useReducer } from "react";
 import "./css/tab.css";
 import { LuMapPin } from "react-icons/lu";
-import { GiDogHouse } from "react-icons/gi";
+import { RiAncientGateLine } from "react-icons/ri";
 import { FaHiking } from "react-icons/fa";
 
 export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3Nq/img/frame-11.svg" }) => {
   const [state, dispatch] = useReducer(reducer, {
-    option: option || "destination",
+    option: option || "destinations" || "activities" || "culture" ,
   });
 
   return (
@@ -19,7 +19,7 @@ export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3N
           dispatch("click_305");
         }}
       >
-         <div className="img"><LuMapPin /> </div>
+         <div className="imge"><LuMapPin /> </div>
         <div className="title">Destinations</div>
       </div>
       <div
@@ -28,7 +28,7 @@ export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3N
           dispatch("click");
         }}
       >
-        <div className="img"><GiDogHouse /> </div>
+        <div className="imge"><RiAncientGateLine /> </div>
         <div className="title">Culture</div>
       </div>
       <div
@@ -37,7 +37,7 @@ export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3N
           dispatch("click_301");
         }}
       >
-        <div className="img"><FaHiking /> </div>
+        <div className="imge"><FaHiking /> </div>
         <div className="title">Activities</div>
       </div>
     </div>

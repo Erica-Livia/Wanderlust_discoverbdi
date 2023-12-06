@@ -1,0 +1,82 @@
+.bookingcard{
+    width:100%;
+    padding-left: 85px;
+}
+#p {
+    color: white;
+}
+.cardContainer {
+    background-color: rgb(64, 84, 61);
+    border: 1px solid rgb(64, 84, 61);
+    padding: 10px 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.select {
+    display: flex;
+}
+
+.select #p {
+    font-size: 20px;
+}
+.people {
+    display: flex;
+}
+
+.people #p {
+    padding: 3px 10px;
+}
+
+.people .number {
+    padding: 5px 10px;
+}
+.people #number-dd {
+    height: 25px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+.date {
+    padding: 1px 0px;
+}
+
+.date_container {
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.containerr {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: fit-content;
+}
+
+.checkCont {
+    cursor: pointer;
+}
+.check{
+    padding: 0px 20px;
+    height: 30px;
+    width: 170px;
+    cursor: pointer;
+    color: rgb(64, 84, 61);
+    font-weight: bold;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.check:hover {
+    transform: scale(1.1);
+    color: whitesmoke;
+    background-color: grey;
+    transition: 0.3s;
+}
+
+.bookingInfo {
+    
+    padding-top:20px;
+}

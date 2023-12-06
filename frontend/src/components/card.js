@@ -1,7 +1,6 @@
   import PropTypes from "prop-types";
   import React from "react";
   import "./css/card.css";
-import { FaDownLeftAndUpRightToCenter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
   
 export const Card = ({ state }) => {
@@ -14,10 +13,15 @@ export const Card = ({ state }) => {
               </div>
               <div className="text-content">
                   <div className="subtitle">Title</div>
-                  <div className="title-4">Description</div>
+                  <div className="descc">Description</div>
                   {state === "active" && (
                       <div className="primary">
                           <div className="title-6"><Link to='/place' className="link">View More</Link></div>
+                      </div>
+                  )}
+                  {state === "guide" && (
+                      <div className="primary">
+                          <div className="title-6"><Link to='/guidesc' className="link">View More</Link></div>
                       </div>
                   )}
               </div>
@@ -26,7 +30,7 @@ export const Card = ({ state }) => {
   };
   
   Card.propTypes = {
-      state: PropTypes.oneOf(["active", "default"]),
+      state: PropTypes.oneOf(["active", "default", "guide"]),
   };
 
 export default Card;

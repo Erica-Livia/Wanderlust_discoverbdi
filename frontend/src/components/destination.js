@@ -1,4 +1,4 @@
-import './css/destinations.css';
+import './css/destination.css';
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Card from './card';

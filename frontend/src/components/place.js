@@ -3,6 +3,7 @@ import './css/place.css';
 import Card from "../components/card";
 import Popular from "../components/popular";
 import { Link } from "react-router-dom";
+import Bookingcard from "./bookingcard";
 
 const Gishora = () => {
     return (
@@ -28,6 +29,9 @@ const Gishora = () => {
         <br></br>This court was only reserved for the royal family. Before one has to reach the residence, there was a public reception place called Inama.
         <br></br>The royal field of Gishora was founded by the Mwami (or King of Burundi) Ntare Rugamba in the first half of the 19th century after its victory against the Chief Ntibirangwa rebels.
         </p>
+          </div>
+          <div className="bookingcard">
+            <Bookingcard />
           </div>
           <div className="like">
           <p>You might also like...</p>

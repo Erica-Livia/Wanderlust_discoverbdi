@@ -41,7 +41,7 @@ const Popular = () => {
               <div className="subtitle-3">Rated 4.7/5</div>
             </div>
           </div>
-          <button><Link to='/destinations' className="link">Explore More</Link></button>
+          <button><Link to='/destinations' className="explore">Explore More</Link></button>
           
         </div>
         </>

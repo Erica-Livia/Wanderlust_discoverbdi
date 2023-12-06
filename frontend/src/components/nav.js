@@ -1,6 +1,5 @@
 import React  from "react";
-import { CiSearch } from "react-icons/ci";
-import { FaRegUserCircle } from "react-icons/fa";
+
 import { Link } from 'react-router-dom';
 import { IoLogInOutline } from "react-icons/io5";
 import { IoLogOutOutline } from "react-icons/io5";

@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './home';
 import Destinations from './components/destinations';
 import Place from './components/place';
+import Guides from './components/guides';
+import Guidesc from './components/guidesc';
 
 const Rout = () => {
     return (
@@ -12,6 +14,8 @@ const Rout = () => {
             <Route path='/home' element={<Home />} />
             <Route path='/destinations' element={<Destinations />} />
             <Route path='/place' element={<Place />} />
+            <Route path='/guides' element ={<Guides />} />
+            <Route path='/guidesc' element={<Guidesc />} />
         </Routes>
         </>
     )
