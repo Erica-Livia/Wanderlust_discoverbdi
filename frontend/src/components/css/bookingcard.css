@@ -78,5 +78,15 @@
 
 .bookingInfo {
     
-    padding-top:20px;
+    padding:20px;  
+}
+
+.save {
+    color: white;
+    width: fit-content;
+}
+
+.save:hover {
+    transform: scale(1.2);
+    transition: 0.9s;
 }

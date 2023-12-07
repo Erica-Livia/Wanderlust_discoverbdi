@@ -1,0 +1,21 @@
+.bookings {
+    padding: 20px 170px;
+    gap: 20px;
+}
+ 
+.delete {
+    margin-left: 20px; 
+    width: fit-content;
+    color: white;
+}
+
+.delete:hover{
+    transform: scale(1.02);
+    color: red;
+    background-color: rgb(90, 84, 61);
+    font-weight: 200;
+}
+.booking_list {
+    margin: 10px;
+    padding: 20px 0
+}

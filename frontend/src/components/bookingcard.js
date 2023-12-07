@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
+import { Link, useNavigate } from "react-router-dom"; 
 import './css/bookingcard.css';
 import "react-datepicker/dist/react-datepicker.css";
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Bookingcard = () => {
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
     const [selectedDate, setSelectedDate] = useState(null);
     const [selectedPeople, setSelectedPeople] = useState(0); // Initialize with 0
     const [showBookingInfo, setShowBookingInfo] = useState(false);
     const [totalPrice, setTotalPrice] = useState(0);
+    const navigate = useNavigate(); 
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
@@ -20,12 +23,24 @@ const Bookingcard = () => {
     };
 
     const handleCheckAvailability = () => {
-        // Calculate total price based on the number of people (assuming $20 per person)
         const calculatedPrice = selectedPeople * 20;
         setTotalPrice(calculatedPrice);
 
-        // You can perform additional logic here before showing the booking info
         setShowBookingInfo(true);
+    };
+
+    const handleBook = () => {
+        // Save booking information to local storage
+        const booking = {
+            date: selectedDate.toISOString(),
+            price: totalPrice,
+        };
+        const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+        bookings.push(booking);
+        localStorage.setItem("bookings", JSON.stringify(bookings));
+
+        // Redirect to the bookings page
+        navigate(`/bookings`);
     };
 
     return(
@@ -52,6 +67,12 @@ const Bookingcard = () => {
                         <option value='8'>8</option>
                         <option value='9'>9</option>
                         <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>Maximum</option>
+
                     </select>
                     </div>
                 </div>
@@ -75,6 +96,17 @@ const Bookingcard = () => {
                     <div className='bookingInfo'>
                         <p>Seleted Date: {selectedDate && selectedDate.toDateString()}</p>
                         <p>Total Price: ${totalPrice}</p>
+                        {isAuthenticated ? (
+                            <div>
+                                <button className="save" onClick={handleBook}>Book</button>
+                            </div>
+                            ) : (
+                            <div>
+                                <p>Please <Link onClick={() => loginWithRedirect()} alt='login'>Login</Link> or <Link onClick={() => loginWithRedirect()} alt='login'>Sign up</Link> to book.</p>
+                                
+                            </div>
+                        )}
+                        
                     </div>
                 )}
         </div>
