@@ -2,7 +2,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import  Card  from "./card";
 import './css/groupcard.css';
+import places from "../db/place";
 import { Link } from 'react-router-dom';
+import PlaceCard from "./placecard";
 
 export const GroupCards = ({ featured }) => {
     return (
@@ -20,10 +22,10 @@ export const GroupCards = ({ featured }) => {
           </div>
         </div>
         <div className="frame-5">
-          <Card state="active"  />
-          <Card state="active" />
-          <Card state="active" />
-          <Card state="active" />
+        <Card state="active"/>
+        <Card state="active"/>
+        <Card state="active"/>
+        <Card state="active"/>
         </div>
       </div>
     );

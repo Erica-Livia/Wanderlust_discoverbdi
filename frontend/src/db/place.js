@@ -1,4 +1,4 @@
-const place = [
+const places = [
     {
         id: 1,
         title: "Gishora Drum Sanctuary",
@@ -117,6 +117,7 @@ const place = [
         price: "",
         region: "Rumonge"
     },
+
     {
         id: 11,
         tile: "Pierre Stanley-Livinstone",
