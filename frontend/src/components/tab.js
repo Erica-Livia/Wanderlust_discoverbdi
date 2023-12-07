@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
-import "./tab.css";
+import "./css/tab.css";
+import { LuMapPin } from "react-icons/lu";
+import { RiAncientGateLine } from "react-icons/ri";
+import { FaHiking } from "react-icons/fa";
 
 export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3Nq/img/frame-11.svg" }) => {
   const [state, dispatch] = useReducer(reducer, {
-    option: option || "destination",
+    option: option || "destinations" || "activities" || "culture" ,
   });
 
   return (
@@ -16,7 +19,7 @@ export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3N
           dispatch("click_305");
         }}
       >
-        <img className="img" alt="Frame" src="https://c.animaapp.com/mudMg3Nq/img/frame-9.svg" />
+         <div className="imge"><LuMapPin /> </div>
         <div className="title">Destinations</div>
       </div>
       <div
@@ -25,8 +28,8 @@ export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3N
           dispatch("click");
         }}
       >
-        <img className="img" alt="Frame" src={frame} />
-        <div className="title-2">Culture</div>
+        <div className="imge"><RiAncientGateLine /> </div>
+        <div className="title">Culture</div>
       </div>
       <div
         className={`item-3 option-0-${state.option}`}
@@ -34,8 +37,8 @@ export const Tab = ({ option, className, frame = "https://c.animaapp.com/mudMg3N
           dispatch("click_301");
         }}
       >
-        <img className="img" alt="Frame" src="https://c.animaapp.com/mudMg3Nq/img/frame-10.svg" />
-        <div className="title-3">Activities</div>
+        <div className="imge"><FaHiking /> </div>
+        <div className="title">Activities</div>
       </div>
     </div>
   );

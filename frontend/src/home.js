@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-import './components/home.css';
+import './components/css/home.css';
 import  GroupCards  from './components/groupcards';
 import Tab from './components/tab';
 import { FaCircleUser } from "react-icons/fa6";
@@ -117,11 +117,7 @@ const Home = () => {
         <div className="container-2">
           <div className="title-12">What Our Customers Say</div>
           <p className="text-wrapper-4">Read the reviews from travelers who have experienced the wonders of Burundi.</p>
-          <button className="button">
-            <div className="title-wrapper">
-              <div className="title-10">Write a Review</div>
-            </div>
-          </button>
+          
         </div>
         <div className="list-3">
           <div className="card-2">

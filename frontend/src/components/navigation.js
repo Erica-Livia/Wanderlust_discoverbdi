@@ -6,7 +6,7 @@ import { IoLogInOutline } from "react-icons/io5";
 import { IoLogOutOutline } from "react-icons/io5";
 import { useAuth0 } from "@auth0/auth0-react";
 import { FaCircleUser } from "react-icons/fa6";
-import './nav.css'
+import './css/nav.css'
 const Nav = () => {
         const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
     return (

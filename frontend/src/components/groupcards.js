@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import  Card  from "./card";
-import './groupcard.css';
+import './css/groupcard.css';
 import { Link } from 'react-router-dom';
 
 export const GroupCards = ({ featured }) => {

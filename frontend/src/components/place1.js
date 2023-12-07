@@ -1,5 +1,5 @@
 import React from "react";
-import './place.css';
+import './css/place.css';
 import Card from "./card";
 import Popular from "./popular";
 
