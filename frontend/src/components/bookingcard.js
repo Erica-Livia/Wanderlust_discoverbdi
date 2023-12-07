@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import './css/bookingcard.css';
 import "react-datepicker/dist/react-datepicker.css";
 import { useAuth0 } from "@auth0/auth0-react";
+import axios from 'axios';
 
 const Bookingcard = () => {
     const { loginWithRedirect, isAuthenticated } = useAuth0();
@@ -29,19 +30,19 @@ const Bookingcard = () => {
         setShowBookingInfo(true);
     };
 
-    const handleBook = () => {
-        // Save booking information to local storage
-        const booking = {
-            date: selectedDate.toISOString(),
-            price: totalPrice,
-        };
-        const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
-        bookings.push(booking);
-        localStorage.setItem("bookings", JSON.stringify(bookings));
+    const handleBook = async () => {
+        try {
+            const response = await axios.post('http://localhost:3000/api/bookings', {
+              date: selectedDate.toISOString(),
+              price: totalPrice,
+            });
 
-        // Redirect to the bookings page
-        navigate(`/bookings`);
-    };
+             // Redirect to the bookings page
+            navigate(`/bookings`);
+            } catch (error) {
+            console.error(error);
+        }
+};
 
     return(
         <>
