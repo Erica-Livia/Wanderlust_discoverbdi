@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import { Link, useNavigate } from "react-router-dom"; 
+import { Link, useNavigate, useParams} from "react-router-dom"; 
 import './css/bookingcard.css';
 import "react-datepicker/dist/react-datepicker.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from 'axios';
+import { places } from "../db/place";
 
 const Bookingcard = () => {
+    const { id } = useParams();
+    const place = places.find(p => p.id === parseInt(id));
+
+    // Debugging log to check the content of the 'place' variable
+    console.log(place);
+
     const { loginWithRedirect, isAuthenticated } = useAuth0();
     const [selectedDate, setSelectedDate] = useState(null);
     const [selectedPeople, setSelectedPeople] = useState(0); // Initialize with 0
@@ -24,26 +31,29 @@ const Bookingcard = () => {
     };
 
     const handleCheckAvailability = () => {
-        const calculatedPrice = selectedPeople * 20;
+        const placePrice = place.price || 0; 
+        const calculatedPrice = selectedPeople * placePrice;
         setTotalPrice(calculatedPrice);
 
         setShowBookingInfo(true);
     };
 
-    const handleBook = async () => {
-        try {
-            const response = await axios.post('http://localhost:3000/api/bookings', {
-              date: selectedDate.toISOString(),
-              price: totalPrice,
-            });
+    const handleBook = () => {
+        // Save booking information to local storage
+        const booking = {
+            placeTitle: place.title, // Include place title in the booking data
+            date: selectedDate.toISOString(),
+            price: totalPrice,
+        };
+        const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+        bookings.push(booking);
+        localStorage.setItem("bookings", JSON.stringify(bookings));
 
-             // Redirect to the bookings page
-            navigate(`/bookings`);
-            } catch (error) {
-            console.error(error);
-        }
-};
-
+        // Redirect to the bookings page
+        navigate(`/bookings`);
+    };
+                    
+                    
     return(
         <>
         <div className="bookingcard">

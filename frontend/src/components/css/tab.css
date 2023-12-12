@@ -1,6 +1,6 @@
 .tab {
   align-items: flex-start;
-  background-color: black;
+  background-color: rgb(64, 84, 61);
   display: flex;
   gap: 48px;
   justify-content: center;

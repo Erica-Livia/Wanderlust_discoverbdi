@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import  Card  from "./card";
 import './css/groupcard.css';
-import places from "../db/place";
+import { places } from "../db/place";
+import { guides } from "../db/guide";
 import { Link } from 'react-router-dom';
-import PlaceCard from "./placecard";
 
 export const GroupCards = ({ featured }) => {
     return (
@@ -22,10 +22,9 @@ export const GroupCards = ({ featured }) => {
           </div>
         </div>
         <div className="frame-5">
-        <Card state="active"/>
-        <Card state="active"/>
-        <Card state="active"/>
-        <Card state="active"/>
+          {places.slice(0,4).map((place) => (
+            <Card state="active" key={place.id} place={place} />
+          ))}
         </div>
       </div>
     );

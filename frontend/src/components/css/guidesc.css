@@ -35,7 +35,8 @@
 
 .img .guide_image {
     border-radius: 50%;
-    height: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .guide_info .introduction {

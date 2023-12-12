@@ -1,77 +1,59 @@
-import React from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
+import { useParams } from "react-router-dom";
 import './css/guidesc.css';
+import { guides } from "../db/guide";
 
 
 const Guidesc = () => {
+  const { id } = useParams();
+  const guide = guides.find(p => p.id === parseInt(id));
 
-    const [showWhatsapp, setShowWhatsapp] = useState(false);
-    const [showFacebook, setShowFacebook] = useState(false);
-    const [showPhone, setShowPhone] = useState(false);
+  if (!guide) {
+    return <div style={{padding: "255px 170px"}}>Error: Guide not found</div>;
+  }
+
      
-    const togglePopup = (popupFunc) => {
-      popupFunc(prev => !prev);
-    };
+
+    const { name, img, description, number, email, category} = guide;
+
+
     return(
         <>
         <div className="guidesc">
             <div className="description_container">
                 <div className="guide_title">
                     <h3><Link to='/guides' className="link">Guides</Link></h3>
-                    <h3>- John Doe:</h3>
-                    <h3>Wildlife Expert</h3>
+                    <h3>- {name}</h3>
+                    <h3>{category}</h3>
                 </div>
             </div>
             <div className="guide_info">
             <div className="img">
-                <img src='https://morawayadventures.com/images/Tanzania/Tarangire_119A.jpg' alt='' className="guide_image"/>
+                <img src={img} alt={name} className="guide_image"/>
             </div>
             
             <div className="introduction">
-            <div className="title_"><h3>John Doe</h3> </div>
+            <div className="title_"><h3>{name}</h3> </div>
                 <p>
-                    John Doe Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus magna vel tincidunt aliquet. Praesent eget tincidunt erat. Sed nunc tortor, malesuada a arcu in, euismod imperdiet ipsum. Cras vestibulum ultricies arcu varius facilisis.
+                    {description}
                 </p>
             </div>
             </div>
             
             <div className="contact">
-            <div className="contact_container">
-      <FaWhatsapp 
-        onClick={() => togglePopup(setShowWhatsapp)} className="contact_icons"
-      />
+          <div className="contact_container">
+            <FaWhatsapp  className="contact_icons" />
+            <FaFacebook className="contact_icons" />
 
-      {showWhatsapp && (  
-        <div className="popup">
-          Whatsapp: 555-1234
-        </div>
-      )}
 
-      <FaFacebook
-        onClick={() => togglePopup(setShowFacebook)} className="contact_icons"
-      />
-
-      {showFacebook && (
-        <div className="popup">
-          Facebook: ...
-        </div>
-      )}
-
-    <FaPhoneAlt
-        onClick={() => togglePopup(setShowPhone)} className="contact_icons"
-      />
-
-      {showPhone && (
-        <div className="popup">
-          Phone: 555-1234
-        </div>
-      )}
-
-    </div>
+              <div className="popup">
+                {number && <p>WhatsApp: {number}</p>}
+                {email && <p>Email: {email}</p>}
+              </div>
+          </div>
     </div>
         </div>
         </>

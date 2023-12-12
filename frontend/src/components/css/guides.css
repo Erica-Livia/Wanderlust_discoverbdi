@@ -1,5 +1,5 @@
 
-.destinations {
+.guides {
     /* align-items: center;
     background-color: #ffffff;
     display: flex;
@@ -11,7 +11,7 @@
 
   }
   
-  .destinations .filter {
+  .guides .filter {
     background-color: rgb(64, 84, 61);
     display: flex;
     width: 100%;
@@ -21,7 +21,7 @@
     align-items: center;
   }
 
-  .destinations .item {
+  .guides .item {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
@@ -31,7 +31,7 @@
     color: white;
   }
   
-  .destinations .title-4 {
+  .guides .title-4 {
     color: #ffffff;
     font-family: "Roboto", Helvetica;
     font-size: 16px;
@@ -43,13 +43,13 @@
     width: fit-content;
   }
   
-  .destinations .img {
+  .guides .img {
     height: 24px;
     position: relative;
     width: 24px;
   }
   
-  .destinations .item{
+  .guides .item{
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
@@ -59,7 +59,7 @@
     position: relative;
   }
   
-  .destinations .cards {
+  .guides .cards {
     align-items: center;
     display: flex;
     gap: 30px;
@@ -71,7 +71,7 @@
     position: center;
   }
   
-  .destinations .frame-4 {
+  .guides .frame-4 {
     align-items: center;
     display: flex;
     gap: 44px;
@@ -81,13 +81,13 @@
     width: 1136px;
   }
   
-  .destinations .icon-arrow-ios-back {
+  .guides .icon-arrow-ios-back {
     height: 65.78px;
     position: relative;
     width: 65.78px;
   }
   
-  .destinations .frame-5 {
+  .guides .frame-5 {
     align-items: center;
     border: 1px solid;
     border-color: #000000;
@@ -99,7 +99,7 @@
     width: 24px;
   }
   
-  .destinations .text-wrapper-3 {
+  .guides .text-wrapper-3 {
     color: #000000;
     font-family: "Roboto", Helvetica;
     font-size: 18px;
@@ -114,7 +114,7 @@
     width: fit-content;
   }
   
-  .destinations .frame-6 {
+  .guides .frame-6 {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -124,20 +124,20 @@
     width: 24px;
   }
   
-  .destinations .icon-arrow-ios {
+  .guides .icon-arrow-ios {
     height: 65.78px;
     margin-right: -43.56px;
     position: relative;
     width: 65.78px;
   }
   
-  .destinations .vector {
+  .guides .vector {
     height: 1px;
     position: relative;
     width: 1440px;
   }
   
-  .destinations .container {
+  .guides .container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@
     width: 1100px;
   }
   
-  .destinations .title-5 {
+  .guides .title-5 {
     color: #000000;
     font-family: "Roboto", Helvetica;
     font-size: 30px;
@@ -160,7 +160,7 @@
     width: 520px;
   }
   
-  .destinations .description {
+  .guides .description {
     color: #000000;
     font-family: "Roboto", Helvetica;
     font-size: 16px;
@@ -172,7 +172,7 @@
     width: 520px;
   }
   
-  .destinations .button {
+  .guides .button {
     all: unset;
     align-items: flex-start;
     box-sizing: border-box;
@@ -183,7 +183,7 @@
     position: relative;
   }
   
-  .destinations .title-wrapper {
+  .guides .title-wrapper {
     align-items: center;
     background-color: #000000;
     border-radius: 8px;
@@ -196,7 +196,7 @@
     width: 160px;
   }
   
-  .destinations .title-6 {
+  .guides .title-6 {
     color: #ffffff;
     font-family: "Roboto", Helvetica;
     font-size: 16px;
@@ -209,7 +209,7 @@
     width: fit-content;
   }
   
-  .destinations .list {
+  .guides .list {
     align-self: center;
     display: flex;
     flex: 0 0 auto;
@@ -222,7 +222,7 @@
     max-width: 100%;
   }
   
-  .destinations .item-3 {
+  .guides .item-3 {
     align-items: center;
     display: flex;
     flex: 1;
@@ -234,7 +234,7 @@
     position: relative;
   }
   
-  .destinations .icon-wrapper {
+  .guides .icon-wrapper {
     background-color: #0000000d;
     border-radius: 50px;
     height: 100px;
@@ -242,7 +242,7 @@
     width: 100px;
   }
   
-  .destinations .icon {
+  .guides .icon {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     color: #000000;
@@ -263,7 +263,7 @@
     width: 100px;
   }
   
-  .destinations .frame-7 {
+  .guides .frame-7 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -274,7 +274,7 @@
     width: 100%;
   }
   
-  .destinations .title-7 {
+  .guides .title-7 {
     align-self: stretch;
     color: #000000;
     font-family: "Roboto", Helvetica;
@@ -287,7 +287,7 @@
     text-align: center;
   }
   
-  .destinations .subtitle-2 {
+  .guides .subtitle-2 {
     align-self: stretch;
     color: #00000080;
     font-family: "Roboto", Helvetica;
@@ -299,7 +299,7 @@
     text-align: center;
   }
   
-  .destinations .subtitle-3 {
+  .guides .subtitle-3 {
     align-self: stretch;
     color: #000000;
     font-family: "Roboto", Helvetica;
@@ -311,7 +311,7 @@
     text-align: center;
   }
   
-  /* .destinations .section {
+  /* .guides .section {
     align-items: center;
     display: flex;
     flex: 0 0 auto;
@@ -322,7 +322,7 @@
     width: 100%;
   } */
   
-  .destinations .map-container {
+  .guides .map-container {
     align-items: flex-start;
     display: flex;
     flex: 1;
@@ -332,7 +332,7 @@
     position: relative;
   }
   
-  .destinations .overlap-group-wrapper {
+  .guides .overlap-group-wrapper {
     align-self: stretch;
     background-color: #0000000d;
     border-radius: 6px;
@@ -342,11 +342,11 @@
     position: relative;
   }
   
-  .destinations .overlap-group-wrapper .overlap-group p {
+  .guides .overlap-group-wrapper .overlap-group p {
     color: #000000;
   }
 
-  .destinations .overlap-group {
+  .guides .overlap-group {
     background-size: 100% 100%;
     height: 1100px;
     position: relative;
@@ -354,7 +354,7 @@
     width: 100%;
   }
    
-  .destinations .ic-location {
+  .guides .ic-location {
     height: 24px;
     left: 538px;
     position: absolute;
@@ -363,7 +363,7 @@
   }
 
   
-  .destinations .logo-2 {
+  .guides .logo-2 {
     align-items: center;
     border-radius: 8px;
     display: inline-flex;
@@ -374,7 +374,7 @@
     position: relative;
   }
   
-  .destinations .text-wrapper-4 {
+  .guides .text-wrapper-4 {
     color: #ffffff;
     font-family: "Inter", Helvetica;
     font-size: 24px;
@@ -386,7 +386,7 @@
     width: fit-content;
   }
   
-  .destinations .container-2 {
+  .guides .container-2 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
@@ -396,7 +396,7 @@
     position: relative;
   }
   
-  .destinations .title-8 {
+  .guides .title-8 {
     align-self: stretch;
     color: #ffffff;
     font-family: "Roboto", Helvetica;
@@ -410,7 +410,7 @@
     width: 70px;
   }
   
-  .destinations .title-9 {
+  .guides .title-9 {
     align-self: stretch;
     color: #ffffff;
     font-family: "Roboto", Helvetica;
@@ -424,7 +424,7 @@
     width: 175px;
   }
   
-  .destinations .title-10 {
+  .guides .title-10 {
     align-self: stretch;
     color: #ffffff;
     font-family: "Roboto", Helvetica;

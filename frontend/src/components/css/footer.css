@@ -4,9 +4,11 @@
     display: flex;
     gap: 60px;
     justify-content: center;
-    padding: 0px 0px;
-    position: relative;
-    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh; 
     height: 100px;
   }
   

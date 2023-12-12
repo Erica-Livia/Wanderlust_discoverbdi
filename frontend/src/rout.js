@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './home';
 import Destinations from './components/destinations';
-import Place from './components/place';
+import Details from './components/details';
 import Guides from './components/guides';
 import Guidesc from './components/guidesc';
 import Booking from './components/bookings';
@@ -16,7 +16,8 @@ const Rout = () => {
         <Route path='/' element={<Home />} />   
             <Route path='/home' element={<Home />} />
             <Route path='/destinations' element={<Destinations />} />
-            <Route path='/place' element={<Place />} />
+            <Route path='/details/:id' element={<Details match />} />
+            <Route path='/guidesc/:id' element={<Guidesc match />} />
             <Route path='/guides' element ={<Guides />} />
             <Route path='/guidesc' element={<Guidesc />} />
             {

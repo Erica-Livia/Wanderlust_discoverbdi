@@ -52,8 +52,9 @@
 .containerr {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 15px;
     width: fit-content;
+    flex-wrap: wrap;
 }
 
 .checkCont {
