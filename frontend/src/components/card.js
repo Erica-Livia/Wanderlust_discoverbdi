@@ -17,7 +17,7 @@ export const Card = ({ state, place, guide }) => {
           <div className="text-content">
             <div className="subtitle">{place.title}</div>
             <div className="descc">{place.shortdesc}</div>
-            <div className="price">{place.price}</div>
+            <div className="price">${place.price}</div>
           </div>
 
           <div className="title-6">
