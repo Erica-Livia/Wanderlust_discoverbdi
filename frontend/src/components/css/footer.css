@@ -1,15 +1,15 @@
 .frame-wrapper {
     align-items: flex-start;
-    background-color: #000000;
+    background-color: rgb(64, 84, 61);
     display: flex;
     gap: 60px;
     justify-content: center;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
     width: 100%;
-    min-height: 100vh; 
     height: 100px;
+    margin-bottom: 0;
   }
   
   .frame-10 {

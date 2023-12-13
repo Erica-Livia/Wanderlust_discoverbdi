@@ -5,6 +5,7 @@ import  GroupCards  from './components/groupcards';
 import Tab from './components/tab';
 import { FaCircleUser } from "react-icons/fa6";
 import Popular from './components/popular';
+
 const Home = () => {
     return (
         <>
@@ -157,7 +158,6 @@ const Home = () => {
         </div>
         <img className="vector-3" alt="Vector" src="https://c.animaapp.com/mudMg3Nq/img/vector-200-1.svg" />
       </div>
-        
         </>
     )
 }

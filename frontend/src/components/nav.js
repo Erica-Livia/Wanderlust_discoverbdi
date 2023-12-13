@@ -42,7 +42,7 @@ const Nav = () => {
                                     isAuthenticated &&
                                     (
                                         <li>
-                                            <Link to='/profile' className='link'><div className='icon'><FaCircleUser /></div></Link>
+                                            <Link to='/profile' className='link'><div className='icon'><FaCircleUser alt='profile'/></div></Link>
                                         </li>
                                     )
                                 }                                
@@ -54,9 +54,9 @@ const Nav = () => {
                              <div className='auth'>
                                 {
                                     isAuthenticated ?
-                                    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} alt='logout'><IoLogOutOutline /></button>
+                                    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><IoLogOutOutline alt='logout' /></button>
                                     :
-                                    <button onClick={() => loginWithRedirect()} alt='login'><IoLogInOutline /></button>
+                                    <button onClick={() => loginWithRedirect()} ><IoLogInOutline alt='login' /></button>
                                 }
                             </div>
 
